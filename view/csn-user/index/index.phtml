@@ -27,14 +27,91 @@ echo $this->partial('csn-user/layout/nav-menu', array('navMenu' => $this->navMen
   <a href="<?php echo $this->url('user-index', array('action' => 'logout'));?>" class="btn btn-success btn-lg" style="float:right; margin-top: 25px">
     <?php echo $this->translate('Log Out'); ?>
   </a>
-  <div style="clear: both"></div>
+  <div style="clear: both"></div> <br>
   <div class="row">
-    <?php echo $this->translate('Congratulations! You have successfully logged in.') ?>
+    
+
+
+
+
+
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><?php echo $this->translate('Cross Platfrom') ?></h3>
+            </div>
+            <div class="panel-body">
+                <p><?php echo sprintf($this->translate('Applications are expected to run on desktop computers, mobile and tablet devices. Supporting a variety of platforms helps to increase market diffusion.')) ?></p>
+                <p><a class="btn btn-primary pull-right" href="http://quirktools.com/screenfly/" target="_blank"><?php echo $this->translate('Test Your Website') ?> &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><?php echo $this->translate('Database Driven') ?></h3>
+            </div>
+            <div class="panel-body">
+                <p><?php echo sprintf($this->translate('Enables collection, storage and visualization of data from clients and products. Newsletter registration, users sign-up, access to chart, profile update and much more.')) ?></p>
+                <p><a class="btn btn-primary pull-right" href="<?php echo $this->url('album') ?>" target="_blank"><?php echo $this->translate('Quick Sample') ?> &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><?php echo $this->translate('PHP/MVC') ?></h3>
+            </div>
+            <div class="panel-body">
+                <p><?php echo sprintf($this->translate('Originally designed for Desktop Graphical User Interface, the MVC pattern has been applied to a diverse range of programming languages becoming a popular strategy for building websites.')) ?></p>
+                <p><a class="btn btn-primary pull-right" href="http://archive.oreilly.com/pub/a/php/archive/mvc-intro.html" target="_blank"><?php echo $this->translate("Essential Reading") ?> &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><?php echo $this->translate('Geolocation') ?></h3>
+            </div>
+            <div class="panel-body">
+                <p><?php echo sprintf($this->translate('Used to identify the geographic location of a device. Considering this can compromise user privacy, the position is only available when the request is approved.')) ?></p>
+                <p><a class="btn btn-primary pull-right" href="http://dev.w3.org/geo/api/spec-source.html#introduction" target="_blank"><?php echo $this->translate('API Specification') ?> &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><?php echo $this->translate('Bootstrap') ?></h3>
+            </div>
+            <div class="panel-body">
+                <p><?php echo sprintf($this->translate('Powerful front-end framework for responsive projects. The layout of web pages adjusts dynamically, taking into account the characteristics of the device used.')) ?></p>
+                <p><a class="btn btn-primary pull-right" href="http://getbootstrap.com/" target="_blank"><?php echo $this->translate('Get Bootstrap') ?> &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><?php echo $this->translate('ZF2 Modularity') ?></h3>
+            </div>
+            <div class="panel-body">
+                <p><?php echo sprintf($this->translate('Zend Framework 2.0 introduced a new and powerful approach to modules. This module system is designed with flexibility, simplicity, and re-usability in mind.')) ?></p>
+                <p><a class="btn btn-primary pull-right" href="http://modules.zendframework.com/" target="_blank"><?php echo $this->translate('Explore ZF2 Modules') ?> &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+
+
+
   </div>
 <?php } else { ?>
   <h1><?php echo $this->translate('Welcome') ?><span  style="color: #FF8C00"> <?php echo $this->translate('Guest') ?></span>!</h1>
   <div>
-    <?php echo $this->translate('Please follow the buttons at the top to navigate through the system.') ?>
+    <?php echo $this->translate('Log-in or Sign-up to access.') ?>
   </div>
 <?php } ?>
 </div>
